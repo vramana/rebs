@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eval $(dependencyEnv) && nopam && rebel",
-    "postinstall": "wget https://github.com/vramana/rebs/releases/download/0.0.1/rebel -O node_modules/.bin/rebel && cp -f ./node_modules/reason/_build/src/refmt_impl.native ./node_modules/.bin/refmt"
+    "postinstall": "wget https://github.com/vramana/rebs/releases/download/0.0.1/rebel -O node_modules/.bin/rebel && chmod +x node_modules/.bin/rebel && cp -f ./node_modules/reason/_build/src/refmt_impl.native ./node_modules/.bin/refmt"
   },
   "repository": {
     "type": "git"
