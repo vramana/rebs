@@ -1,0 +1,26 @@
+{
+  "name": "rebs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eval $(dependencyEnv) && nopam && rebel",
+    "postinstall": "cp -f ./node_modules/reason/_build/src/refmt_impl.native ./node_modules/.bin/refmt"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^1.0.2",
+    "reason": "https://github.com/facebook/reason.git"
+  },
+  "rebel": {
+    "backend": "bucklescript",
+    "targets": [
+      "index"
+    ]
+  }
+}
